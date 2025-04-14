@@ -3,51 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <title>Blog - Abil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1 align="center">=== Abil's Blog ===</h1>
-    <p align="center"><i>Updates from My Journey</i></p>
-    <hr />
-    <p align="center">
-      <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> |
-      <a href="blog.html"><b>Blog</b></a> |
-      <a href="contact.html">Contact</a>
-    </p>
-    <hr />
-    <p align="center">
-      <img
-        src="images/Blog1.jpg"
-        alt="Peksiminas 2024"
-        width="300"
-        height="200"
-      /><br />
-      <a href="blog1.html"><b>The Struggle at Peksiminas 2024 </b></a><br />
-      Achieving 8th Place Nationally in the Student Art Competition
-    </p>
-    <hr />
-    <p align="center">
-      <img
-        src="images/Blog2.jpg"
-        alt="ONMIPA 2024"
-        width="300"
-        height="200"
-      /><br />
-      <a href="blog2.html"><b>ONMIPA-PT 2024</b></a
-      ><br />
-      A Valuable Experience at ONMIPA 2024
-    </p>
-    <hr />
-    <p align="center">
-      <img
-        src="images/Blog3.jpg"
-        alt="FLS2N 2022"
-        width="300"
-        height="200"
-      /><br />
-      <a href="blog3.html"><b>FLS2N Solo Guitar 2022 </b></a><br />
-      Performing at the Provincial Level with My Beloved Guitar
-    </p>
-    <hr />
+    <nav class="main-nav">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li>
+          <a href="blog.html" class="active"><b>Blog</b></a>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 align="center">=== Abil's Blog ===</h1>
+      <p align="center"><i>Updates from My Journey</i></p>
+      <hr />
+      <p class="blog-preview" align="center">
+        <img
+          src="images/Blog1.jpg"
+          alt="Peksiminas 2024"
+          width="300"
+          height="200"
+        /><br />
+        <a href="blog1.html"><b>The Struggle at Peksiminas 2024 </b></a><br />
+        Achieving 8th Place Nationally in the Student Art Competition
+      </p>
+      <hr />
+      <p class="blog-preview" align="center">
+        <img
+          src="images/Blog2.jpg"
+          alt="ONMIPA 2024"
+          width="300"
+          height="200"
+        /><br />
+        <a href="blog2.html"><b>ONMIPA-PT 2024</b></a
+        ><br />
+        A Valuable Experience at ONMIPA 2024
+      </p>
+      <hr />
+      <p class="blog-preview" align="center">
+        <img
+          src="images/Blog3.jpg"
+          alt="FLS2N 2022"
+          width="300"
+          height="200"
+        /><br />
+        <a href="blog3.html"><b>FLS2N Solo Guitar 2022 </b></a><br />
+        Performing at the Provincial Level with My Beloved Guitar
+      </p>
+      <hr />
+    </main>
     <p align="center"><small>© 2025 Nabil - Sam Ratulangi University</small></p>
   </body>
 </html>

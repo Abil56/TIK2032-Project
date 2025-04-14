@@ -3,116 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <title>Gallery - Abil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1 align="center">=== Abil's Gallery ===</h1>
-    <p align="center"><i>Moments and Creations from My Life</i></p>
-    <hr />
-    <p align="center">
-      <a href="index.html">Home</a> |
-      <a href="gallery.html"><b>Gallery</b></a> | <a href="blog.html">Blog</a> |
-      <a href="contact.html">Contact</a>
-    </p>
-    <hr />
-    <h2 align="center">How I Dress</h2>
-    <table align="center" border="1">
-      <tr>
-        <td align="center">
-          <img
-            src="images/photo1.jpg"
-            alt="Semi-Formal"
-            width="300"
-            height="500"
-          /><br />
-          <b>Semi-Formal Look</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/photo2.jpg"
-            alt="Formal"
-            width="300"
-            height="500"
-          /><br />
-          <b>Formal Attire</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/photo3.jpg"
-            alt="Casual"
-            width="300"
-            height="500"
-          /><br />
-          <b>Casual Style</b>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2 align="center">Competing in Events</h2>
-    <table align="center" border="1">
-      <tr>
-        <td align="center">
-          <img
-            src="images/achive1.jpg"
-            alt="Competition 1"
-            width="300"
-            height="400"
-          /><br />
-          <b>PEKSIMINAS 2024</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/achive2.jpg"
-            alt="Competition 2"
-            width="300"
-            height="400"
-          /><br />
-          <b>ILCAMP 2022</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/achive3.jpg"
-            alt="Competition 3"
-            width="300"
-            height="400"
-          /><br />
-          <b>TEKKEN 8 TOURNAMENT</b>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2 align="center">My Drawings</h2>
-    <table align="center" border="1">
-      <tr>
-        <td align="center">
-          <img
-            src="images/Gambar1.jpg"
-            alt="Drawing 1"
-            width="300"
-            height="500"
-          /><br />
-          <b>Digital Sketch 1</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/Gambar2.jpg"
-            alt="Drawing 2"
-            width="300"
-            height="500"
-          /><br />
-          <b>Digital Sketch 2</b>
-        </td>
-        <td align="center">
-          <img
-            src="images/Gambar3.jpg"
-            alt="Drawing 3"
-            width="300"
-            height="500"
-          /><br />
-          <b>Digital Sketch 3</b>
-        </td>
-      </tr>
-    </table>
-    <hr />
+    <nav class="main-nav">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="gallery.html" class="active"><b>Gallery</b></a>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 align="center">=== Abil's Gallery ===</h1>
+      <p align="center"><i>Moments and Creations from My Life</i></p>
+      <hr />
+      <h2 align="center">How I Dress</h2>
+      <table align="center" border="1">
+        <tr>
+          <td align="center">
+            <img
+              src="images/photo1.jpg"
+              alt="Semi-Formal"
+              width="300"
+              height="500"
+            /><br />
+            <b>Semi-Formal Look</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/photo2.jpg"
+              alt="Formal"
+              width="300"
+              height="500"
+            /><br />
+            <b>Formal Attire</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/photo3.jpg"
+              alt="Casual"
+              width="300"
+              height="500"
+            /><br />
+            <b>Casual Style</b>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <h2 align="center">Competing in Events</h2>
+      <table align="center" border="1">
+        <tr>
+          <td align="center">
+            <img
+              src="images/achive1.jpg"
+              alt="Competition 1"
+              width="300"
+              height="400"
+            /><br />
+            <b>PEKSIMINAS 2024</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/achive2.jpg"
+              alt="Competition 2"
+              width="300"
+              height="400"
+            /><br />
+            <b>ILCAMP 2022</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/achive3.jpg"
+              alt="Competition 3"
+              width="300"
+              height="400"
+            /><br />
+            <b>TEKKEN 8 TOURNAMENT</b>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <h2 align="center">My Drawings</h2>
+      <table align="center" border="1">
+        <tr>
+          <td align="center">
+            <img
+              src="images/Gambar1.jpg"
+              alt="Drawing 1"
+              width="300"
+              height="500"
+            /><br />
+            <b>Digital Sketch 1</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/Gambar2.jpg"
+              alt="Drawing 2"
+              width="300"
+              height="500"
+            /><br />
+            <b>Digital Sketch 2</b>
+          </td>
+          <td align="center">
+            <img
+              src="images/Gambar3.jpg"
+              alt="Drawing 3"
+              width="300"
+              height="500"
+            /><br />
+            <b>Digital Sketch 3</b>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </main>
     <p align="center"><small>© 2025 Nabil - Sam Ratulangi University</small></p>
   </body>
 </html>
