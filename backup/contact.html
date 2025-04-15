@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Abil - Get in touch via email, phone, or Instagram"
+    />
+    <meta
+      name="keywords"
+      content="Abil, contact, informatics, student, Sam Ratulangi"
+    />
+    <meta name="author" content="Nabil Hamba Illahi" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Abil" />
+    <meta
+      property="og:description"
+      content="Reach out to Nabil Hamba Illahi via email, phone, or Instagram."
+    />
+    <meta property="og:image" content="/images/Abil's Photo.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/contact.html" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Abil" />
+    <meta
+      name="twitter:description"
+      content="Reach out to Nabil Hamba Illahi via email, phone, or Instagram."
+    />
+    <meta name="twitter:image" content="/images/Abil's Photo.jpg" />
+    <title>Contact - Abil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="loader" aria-hidden="true">
+      <div class="cyber-grid"></div>
+      <span class="load-percent">0%</span>
+    </div>
+    <!-- Background Canvas -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <!-- Header -->
+    <header
+      class="site-header"
+      itemscope
+      itemtype="https://schema.org/WPHeader"
+    >
+      <div class="container">
+        <nav class="main-nav" aria-label="Main navigation" role="navigation">
+          <a href="index.html" class="logo" aria-label="Abil's Portfolio Home">
+            <img
+              src="images/logo.png"
+              alt="Abil's Logo"
+              width="40"
+              height="40"
+            />
+          </a>
+          <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-hidden="true"
+          />
+          <label
+            for="nav-toggle"
+            class="nav-toggle-label"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a href="contact.html" class="active" aria-current="page"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button class="theme-toggle" aria-label="Cycle through themes">
+                <span class="theme-icon">🌙</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main role="main" class="container">
+      <section class="hero" aria-labelledby="contact-title">
+        <h1 id="contact-title" class="scroll-reveal">
+          <span class="typing-effect" data-text="Contact Abil"></span>
+        </h1>
+        <p class="scroll-reveal subtitle">Get in Touch with Me</p>
+      </section>
+      <hr />
+      <section
+        class="contact-info"
+        aria-labelledby="reach-title"
+        itemscope
+        itemtype="https://schema.org/ContactPoint"
+      >
+        <h2 id="reach-title" class="scroll-reveal">Reach Me</h2>
+        <p class="scroll-reveal">
+          <span class="contact-item">
+            <b>Email:</b>
+            <span itemprop="email">nabilillahi026@student.unsrat.ac.id</span>
+            <button
+              class="copy-btn"
+              data-copy="nabilillahi026@student.unsrat.ac.id"
+              aria-label="Copy email"
+            >
+              <svg class="icon"><use xlink:href="#copy"></use></svg>
+            </button> </span
+          ><br />
+          <span class="contact-item">
+            <b>Phone:</b> <span itemprop="telephone">+62 813 3956 3428</span>
+            <button
+              class="copy-btn"
+              data-copy="+62 813 3956 3428"
+              aria-label="Copy phone"
+            >
+              <svg class="icon"><use xlink:href="#copy"></use></svg>
+            </button> </span
+          ><br />
+          <span class="contact-item">
+            <b>Instagram:</b>
+            <a
+              href="https://instagram.com/nhi56_nabil"
+              class="insta-link"
+              itemprop="sameAs"
+              target="_blank"
+              rel="noopener"
+              >@nhi56_nabil</a
+            >
+            <button
+              class="copy-btn"
+              data-copy="https://instagram.com/nhi56_nabil"
+              aria-label="Copy Instagram URL"
+            >
+              <svg class="icon"><use xlink:href="#copy"></use></svg>
+            </button>
+          </span>
+        </p>
+      </section>
+      <section class="contact-form-section" aria-labelledby="form-title">
+        <h2 id="form-title" class="scroll-reveal">Send a Message</h2>
+        <form
+          class="contact-form scroll-reveal"
+          aria-label="Contact form"
+          role="form"
+        >
+          <p>
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              maxlength="50"
+              required
+              aria-required="true"
+              placeholder="Your name"
+            />
+            <span class="char-count" aria-live="polite">0/50</span>
+          </p>
+          <p>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              placeholder="Your email"
+            />
+            <span class="error-message" aria-live="polite"></span>
+          </p>
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              maxlength="500"
+              required
+              aria-required="true"
+              placeholder="Your message"
+            ></textarea>
+            <span class="char-count" aria-live="polite">0/500</span>
+          </p>
+          <p class="form-actions">
+            <button type="submit" aria-label="Submit form">Send</button>
+          </p>
+        </form>
+        <p class="form-prompt scroll-reveal" aria-live="polite">
+          Let's chat about tech, art, or games!
+        </p>
+      </section>
+      <section
+        class="map-placeholder scroll-reveal"
+        aria-label="Location placeholder"
+      >
+        <svg viewBox="0 0 200 100" class="map-svg">
+          <rect x="0" y="0" width="200" height="100" fill="var(--muted-gray)" />
+          <circle
+            cx="100"
+            cy="50"
+            r="6"
+            class="map-pin"
+            data-tooltip="Manado, Indonesia"
+          />
+        </svg>
+      </section>
+      <hr />
+    </main>
+    <!-- Footer -->
+    <footer
+      class="site-footer"
+      itemscope
+      itemtype="https://schema.org/WPFooter"
+    >
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p class="scroll-reveal">
+              © 2025 Nabil Hamba Illahi - Universitas Sam Ratulangi
+            </p>
+          </div>
+          <form
+            class="newsletter-form scroll-reveal"
+            aria-label="Newsletter subscription"
+          >
+            <label for="newsletter-email" class="visually-hidden"
+              >Email for newsletter</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              placeholder="Subscribe to my updates"
+              aria-label="Enter your email to subscribe"
+              required
+            />
+            <button type="submit" aria-label="Subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top">
+      <svg class="icon"><use xlink:href="#arrow-up"></use></svg>
+    </button>
+    <!-- Performance Dashboard -->
+    <button class="perf-toggle" aria-label="Toggle performance dashboard">
+      📊
+    </button>
+    <div class="perf-dashboard" aria-live="polite" style="display: none"></div>
+    <!-- SVG Sprites -->
+    <svg style="display: none">
+      <symbol id="arrow-up" viewBox="0 0 24 24">
+        <!-- Arrow Up SVG Path -->
+      </symbol>
+      <symbol id="copy" viewBox="0 0 24 24">
+        <!-- Copy SVG Path -->
+      </symbol>
+    </svg>
+    <script src="script.js"></script>
+  </body>
+</html>
